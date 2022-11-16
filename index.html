@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9ffc687130.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
             <nav>
                 <div class="nav__container">
-                    <img src="./assets/logo.svg" alt="" class="logo">
+                    <div class="div">
+                    <img src="./assets/treact_logo.svg" alt="" class="logo">
                     <a href="" class="logotitle">
                         <span>Treact</span>
                     </a>
+                </div>
                     <ul class="nav__links">
                         <li><a href="" class="nav__link">About</a></li>
                         <li><a href="" class="nav__link">Blog</a></li>
@@ -24,7 +27,35 @@
                         <li><a href="" class="nav__link">Login</a></li>
                         <li><a href="" class="nav__linked nav__linked--primary">Sign Up</a></li>
                     </ul>
+                
+
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link nav__linked--primary nav__linked--primary:hover" onclick="closeMenu()">Sign Up</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
             </nav>
             <header>
                 <div class="header__container">
@@ -33,17 +64,17 @@
                             <h1>
                             Beautiful React Templates <span class="blue">for you</span>     
                             </h1>
-                            <p class="para">
+                            <p class="para grey">
                             Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
                             </p>
-                            <div class="action">
+                        <div class="action">
                             <input type="Email" placeholder="Your Email Adress" class="e-mail">
                             <button class="emailbutton">
                                 Get Started
                             </button>
                         </div>
                             <p class="para--second">
-                            Our trusted Customers
+                            OUR THRUSTED CUSTOMERS
                             </p>
                             <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="" class="customers">
                         </div>
@@ -57,9 +88,9 @@
     <main>
         <div class="container__features">
             <div class="row row__column">
-                <h5 class="feature2"><span class="blue">Features</span></h5>
+                <h5><span class="blue">Features</span></h5>
                 <h2>We have Amazing <span class="blue"> Service.</span></h2>
-                <h4 class="featur">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas, eos itaque obcaecati deleniti quasi Lorem ipsum dolor sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+                <h4 class="featur grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas, eos itaque obcaecati deleniti quasi Lorem ipsum dolor sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
 
                 <div class="services">
                     <div class="service">
@@ -68,7 +99,7 @@
                     </div>
                             <div class="service__description">
                                 <span class="text">Secure</span>
-                                <p class="para-third">We strictly only deal with vendors that provide top notch security.</p>
+                                <p class="para-third grey">We strictly only deal with vendors that provide top notch security.</p>
                             </div>
                     </div>
                     <div class="service">
@@ -77,7 +108,7 @@
                         </div>
                             <div class="service__description">
                                 <span class="text">24/7 Support</span>
-                                <p class="para-third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
+                                <p class="para-third grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
                             </div>
                     </div>
                     <div class="service">
@@ -86,7 +117,7 @@
                         </div>
                             <div class="service__description">
                                 <span class="text">Customizable</span>
-                                <p class="para-third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
+                                <p class="para-third grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
                             </div>
                     </div>
                     <div class="service">
@@ -95,7 +126,7 @@
                         </div>
                             <div class="service__description">
                                 <span class="text">Reliable</span>
-                                <p class="para-third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
+                                <p class="para-third grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
                             </div>
                     </div>
                     <div class="service">
@@ -104,7 +135,7 @@
                         </div>
                             <div class="service__description">
                                 <span class="text">Fast</span>
-                                <p class="para-third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
+                                <p class="para-third grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
                             </div>
                     </div>
                     <div class="service">
@@ -113,7 +144,7 @@
                         </div>
                             <div class="service__description">
                                 <span class="text">Easy</span>
-                                <p class="para-third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
+                                <p class="para-third grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis odio praesentium natus!</p>
                             </div>
                     </div>
                 </div>
@@ -125,7 +156,7 @@
                 <div class="qualitywork">
                     <h4 class="h4__quality"><span class="blue">QUALITY WORK</span></h4>
                     <h2> Designed & Developed by<span class="blue"> Professionals.</span></h2>
-                    <p class="para-third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem dolorum obcaecati fugiat quae! Adipisci vitae libero sit cum eius distinctio architecto eum ut quidem tempora. Velit, eum ratione odit dolore architecto quisquam veniam tempora.</p>
+                    <p class="para-third grey grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem dolorum obcaecati fugiat quae! Adipisci vitae libero sit cum eius distinctio architecto eum ut quidem tempora. Velit, eum ratione odit dolore architecto quisquam veniam tempora.</p>
                     <button class="btn">Learn More</button>
                 </div>
                 <div class="qualityimg">
@@ -140,7 +171,7 @@
                     <img src="./assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="" class="img__quality">
                 </div>
                 <div class="steps__width">
-                    <h6 class="Header">STEPS</h6>
+                    <h6 class="Header"><span class="blue">STEPS</span></h6>
                     <h2 class="h2-steps">Easy to <span class="blue"> Get Started</span></h2>
                     <ul class="flex__column">
                         <li class="flex__row">
@@ -173,30 +204,27 @@
                 <div class="Values">
                     <h5><span class="blue">VALUES</span></h5>
                     <h2>We Always Abide by Our <span class="blue"> Principles.</span></h2>
-                    <p class="para-six">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo vitae ratione, facere, optio quisquam nam nulla ipsa quod fuga aspernatur ipsum! Alias fugiat doloremque quo pariatur reprehenderit sunt. Voluptates, libero a? Possimus, provident similique?</p>
+                    <p class="para-six grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo vitae ratione, facere, optio quisquam nam nulla ipsa quod fuga aspernatur ipsum! Alias fugiat doloremque quo pariatur reprehenderit sunt. Voluptates, libero a? Possimus, provident similique?</p>
                     
-                    <div class="minicontainer">
-                        <div class="Afford row__wrap">
-                            <div class="AffordImgText">
-                                <img src="./assets/dollar-sign-solid.svg" alt="" class="affprofimg affprofimgaffor">
-                                <h5 class="h5val">Affordable</h5>
+                    <div class="containervalues">
+                        <div class="affordable">
+                            <div class="projectsheader">
+                                <figure class="figure__values">
+                                    <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+                                </figure>
+                                    <h3>Affordable</h3>
                             </div>
-
-                            <div class="Affordpara para-five ">
-                                <p>We promise to offer you the best rate we can - at par with the industry standard.</p>
-                            </div>
+                            <p class="valuesp grey">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eveniet quae beatae in, ab ullam.</p>
                         </div>
-                        
-                        <div class="Profess row__wrap">
-                            <div class="ProffessImgText">
-                                <img src="./assets/suitcase-solid.svg" alt="" class="affprofimg affprofimgprof">
-                                <h5 class="h5val">Professionalism</h5>
-                            </div>
-                            
-                            <div class="Professpara para-five">
-                                <p>We assure you that our templates are designed and created by professional designers.</p>
-                            </div>
 
+                        <div class="proffesional">
+                            <div class="projectsheader">
+                                <figure class="figure__values2">
+                                    <i class="fas fa-briefcase " aria-hidden="true"></i>
+                                </figure>
+                                <h3>Professionalism</h3>
+                            </div>
+                            <p class="valuesp grey">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illo minus repellat quas at repellendus!</p>
                         </div>
                     </div>
                     
