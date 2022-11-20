@@ -14,6 +14,7 @@ html{
 nav{
     height: 80px;
     display: flex;
+    margin: 10px 4px;
 }
 
 .grey{
@@ -69,19 +70,28 @@ li{
 }
 
 .menu__backdrop{
-    position: absolute;
-    background-color: black;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    margin: 1rem 1rem;
+    border: 4px solid rgba(224, 224, 224, 0.295);
+    border-radius: 0.5rem;
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding: 2rem;
+    text-align: center;
+    --tw-text-opacity: 1;
+    color: rgb(26 32 44 / var(--tw-text-opacity));
     transition: all 300ms ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fas2{
+    color: rgb(0, 0, 255, 0.525);
 }
 
 .menu--open .menu__backdrop {
@@ -486,7 +496,7 @@ width: 50%;
 
 .h5price{
     font-size: 22px;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
 }
 
 .h2price{
@@ -690,6 +700,8 @@ width: 50%;
     background-color: blue;
     padding: 12px 0px;
     text-align: center;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .buttonplace3{
@@ -892,11 +904,16 @@ Footer
 .footer--link{
     width: 100%;
     height: 100%;
-    padding: 4px 4px;
+    padding: 12px 9px;
     border: 1px solid white;
     border-radius: 9999px;
     background-color: white;
     margin-right: 7px;
+}
+
+.footer--link--img{
+    width: 20px;
+    height: 15px;
 }
 
 /* SMALL PHONES, LARGE  SMARTPHONES */
@@ -935,7 +952,7 @@ Footer
         flex-direction: column;
     }
 
-    .e-mail{
+    .e-mail{ 
         position: relative;
     }
 
@@ -956,6 +973,8 @@ Footer
         margin-top: 16px;
         width: 100%;
     }
+
+    /* Header */
 
     h5 , h4 , h6 {
         font-size: 18px;
@@ -991,5 +1010,320 @@ Footer
 
     .para-third{
         text-align: center;
+    }
+
+    .h4__quality{
+        text-align: center;
+    }
+    
+    .qualitywork{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .center{
+        padding-top: 12px;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .btn{
+        text-align: center;
+    }
+
+    /* Steps */
+
+    .steps__width{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Header{
+        padding-top: 12px ;
+    }
+
+    .h2-steps{
+        padding: 16px 0px;
+    }
+
+    .flex__row{
+        display: block;
+    }
+
+    .StepsText{
+        margin: 0;
+    }
+
+    /* Values */
+
+    .Values{
+        width: 100%;
+        text-align: center;
+    }
+
+    .containervalues{
+        display: block;
+        width: 100%;
+    }
+
+    .para-six{
+        text-align: center;
+        
+    }
+
+    .affordable{
+        margin: 0 auto;
+    }
+
+    .proffesional{
+        margin: 0 auto;
+    }
+
+    /* Pricing */
+
+    .h4price{
+        width: 100%;
+        padding-bottom: 18px;
+    }
+
+    .plans{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .plan{
+        width: 90%;
+        margin:0px 0px 16px 0px;
+    }
+
+    /* Testimonials */
+
+    .testimonialstwosides{
+        display: block;
+        width: 100%;
+    }
+
+    .testimonialsimg{
+        width: 100%;
+    }
+
+    .testimonials{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .test{
+        text-align: center;
+    }
+
+    .twothings{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .describe{
+        padding: 12px 0px;
+    }
+
+    /* Footer */
+
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .h5footer{
+        font-size: 16px;
+    }
+
+    .alinks{
+        font-size: 12px;
+    }
+    
+
+    .footercopyright{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .treac{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 12px;
+    }
+
+    .footerimg{
+        height: 35px;
+    }
+
+    .footer__links{
+        margin: 22px auto;
+    }
+
+    .footer--link{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Small phones, tablets, large smartphones */
+
+@media (max-width: 768px){
+
+    .nav__links{
+        display: none;
+    }
+
+    .btn__menu{
+        display: block;
+    }
+
+    .menu__list{
+        padding: 14px 0px;
+    }
+ 
+    .menu__link{
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    .nav__linked--primary{
+        padding: 10px 22px;
+        color: white;   
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .home__description {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 28px;
+        text-align: center;
+        font-weight: 800;
+        margin: 8px 0px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    .action{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .e-mail{
+        position: relative;
+        width: 70%;
+    }
+
+    .para--second{
+        padding-top: 32px;
+        text-align: center;
+    }
+
+    .customers{
+        width: 80%;
+    }
+
+    .img__header{
+        margin-top: 26px;
+        width: 60%;
+    }
+
+    /* Features */
+
+    .featur{
+        font-size: 18px;
+    }
+
+    .service{
+        display: flex;
+        width: 50%;
+    }
+
+    /* Quality */
+    .row{
+        flex-direction: row;
+    }
+
+    .qualitywork{
+        padding-right: 22px;
+    }
+
+    /* Steps */
+    
+    .steps__width{
+        width: 100%;
+    }
+
+    .h2-steps{
+        padding: 24px 0px;
+    }
+
+    .para-four{
+        text-align: left;
+    }
+
+    /* Values */
+
+    .containervalues{
+        display: block;
+    }
+
+    /* Values */
+
+    .row{
+        flex-direction: column;
+    }
+
+    .plans{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .plan{
+        width: 50%;
+        margin:0px 0px 16px 0px;
+    }
+
+    /* Testimonials */
+
+    .duration{
+        text-align: left;
+    }
+
+    .testi{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .img--mask{
+        width: 70px;
+        height: 75px;
+    }
+
+    .describe{
+        padding: 0;
     }
 }
